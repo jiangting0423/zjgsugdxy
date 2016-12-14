@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>浙江工商大学管理工程与电子商务学院</title>
     <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/iconfont.css" rel="stylesheet" />
     <script type="text/javascript" src="js/myfocus-2.0.1.min.js"></script><!--引入myFocus库-->
     <script type="text/javascript" src="js/mf-pattern/mF_rapoo.js"></script><!--引入风格js文件-->
     <link href="js/mf-pattern/mF_rapoo.css" type="text/css" /><!--引入风格css文件-->
@@ -13,94 +15,448 @@
 
 </head>
 <body>
-<div class="header">
-    <div class="header-t-left">
-        <div class="logo">
-            <img src="image/Logo.png">
+    <div class="container">
+        <div class="header">
+            <div class="ct">
+                <div class="header-t-left">
+                    <div class="logo">
+                        <img src="img/Logo.png">
+                    </div>
+                </div>
+
+                <div class="header-t-right">
+                    <ul class="header-menu">
+                        <li class="first nav_item">
+                            <a class="nav_title">首页</a>
+                        </li>
+                        <li class="nav_item">
+                            <a class="nav_title">学院概况</a>
+                            <ul class="header-menu-item">
+                                <li><a href="#">学院简介</a></li>
+                                <li><a href="#">机构总览</a></li>
+                                <li><a href="#">现任领导</a></li>
+                                <li><a href="#">历史沿革</a></li>
+                            </ul>
+                        </li><!--学院概况：学院简介，机构总览，现任领导，历史沿革-->
+                        <li class="nav_item">
+                            <a class="nav_title">人才培养</a>
+                            <ul class="header-menu-item">
+                                <li><a href="#">师资队伍</a></li>
+                                <li><a href="#">本科生教学</a></li>
+                                <li><a href="#">研究生教学</a></li>
+                                <li><a href="#">留学生教学</a></li>
+                                <li><a href="#">学科建设</a></li>
+                            </ul>
+                        </li><!--人才培养：师资队伍，本科生教学，研究生教学，留学生教学，学科建设-->
+                        <li class="nav_item">
+                            <a class="nav_title">科研学术</a>
+                            <ul class="header-menu-item">
+                                <li><a href="#">科研概况</a></li>
+                                <li><a href="#">科研项目</a></li>
+                                <li><a href="#">平台建设</a></li>
+                            </ul>
+                        </li><!--科研学术：科研概况，科研项目，平台建设-->
+                        <li class="nav_item">
+                            <a class="nav_title">招生就业</a>
+                            <ul class="header-menu-item">
+                                <li><a href="#">本科生招生</a></li>
+                                <li><a href="#">研究生招生</a></li>
+                                <li><a href="#">留学生招生</a></li>
+                                <li><a href="#">就业信息</a></li>
+                            </ul>
+                        </li><!--招生就业：本科生招生，研究生招生，留学生招生，就业信息-->
+                        <li class="nav_item">
+                            <a class="nav_title">对外交流</a>
+                            <ul class="header-menu-item">
+                                <li><a href="#">合作交流</a></li>
+                                <li><a href="#">国际合作项目</a></li>
+                            </ul>
+                        </li><!--对外交流：合作交流，国际合作项目-->
+                    </ul>
+                </div>
+            </div>
         </div>
+
+        <div id="boxID" class="ct"><!--焦点图盒子-->
+            <!--<div class="loading"><img src="img/loading.gif" alt="请稍候..." /></div>&lt;!&ndash;载入画面(可删除)&ndash;&gt;-->
+            <div class="pic"><!--内容列表(li数目可随意增减)-->
+                <ul>
+                    <li><a href="#"><img src="img/psb11.jpg"/></a></li>
+                    <li><a href="#"><img src="img/psb22.jpg"/></a></li>
+                    <li><a href="#"><img src="img/psb33.jpg"/></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- main -->
+        <div class="main ct clearfix">
+
+            <!-- fast link -->
+            <div class="ma">
+                <div class="mli-1">
+                    <input type="text" class="mli-inp" placeholder="输入查询" />
+                    <i class="iconfont icon-search"></i>
+                </div>
+                <div class="ma-list">
+                    <h5>快速入口</h5>
+                    <div class="ma-l-item mli-2 clearfix">
+                        <p><a href="#"><img src="img/icons/m1.gif" /></a></p>
+                        <p><a href="#"><img src="img/icons/m2.gif" /></a></p>
+                        <p><a href="#"><img src="img/icons/m3.gif" /></a></p>
+                        <p><a href="#"><img src="img/icons/m4.gif" /></a></p>
+                    </div>
+                </div>
+                <div class="ma-list">
+                    <h5>专题项目</h5>
+                    <div class="ma-l-item mli-3">
+                        <a href="#"><img src="img/ma1.png" /></a>
+                        <a href="#"><img src="img/ma2.png" /></a>
+                        <a href="#"><img src="img/ma3.png" /></a>
+                        <a href="#"><img src="img/ma4.png" /></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- news -->
+            <div class="mb">
+                <h5><img src="img/t1.png" /></h5>
+                <div class="mb-news">
+                    <!-- news -->
+                    <div class="mb-news-item mb_i">
+                        <a href="#" class="mni-pic"><img src="img/news/1.jpg" /></a>
+                        <div class="mni-cont">
+                            <a href="#" class="mni-title">
+                                【置顶】我校“电子商务虚拟仿真实验教学中心”获批为国家级虚拟仿真实验教学中心
+                            </a>
+                            <p class="mni-summary">
+                                    根据教育部办公厅教高厅函[2016]6号文件，我院申报的“电子商务虚拟仿真实验教学中心”获批为国家级虚拟仿真实验教学中心，成为目前全国唯一的电子商务类虚拟仿真实验教学中心。“电子商务虚拟仿真实验教学中心”拥有五个实验室，开设了4大实验课程群，包括12个实验模块，9大虚拟仿真实验平台，共计超过180个实验，涵盖35门、辐射11门课程的虚拟仿真实验教学体系。中心总面积2150平方米，实验设备950台，价值1680万。中心现有师资69人，包括专职实验员8人，师资的年龄、学历、职称结构合理。目前能够面向电子商务、物流管理、信息管理与信息工程、信息安全、计算机科学与技术、软件工程、工商管理、市场营销、金融工程等10多个本科专业开设虚拟仿真实验，年实验人时数达到3.6万以上。中心下设新一代电子商务技术实验室、信息
+                            </p>
+                            <span class="mni-time">2016/02/05</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-news-item2 mb_i">
+                        <a href="#" class="mni-pic"><img src="img/news/2.jpg" /></a>
+                        <div class="mni-cont">
+                            <a href="#" class="mni-title">
+                                 【置顶】中国工程院赵沁平院士受聘为信息学院特聘教授
+                            </a>
+                            <p class="mni-summary">
+                                    11月25日上午，信息学院特邀王兴伟教授作题为“关于工业互联网的认识和思考”的学术报告会。王兴伟教授，东北大学国家示范性软件学院院长，国家杰出青年科学基金获得者。此次报告会，他中阐述了工业互联网的由来，以德国、美国、中国为例描述了工业互联网的鲜明特点以及给当代世界将会带来的革命性变化，给出了工业互联网的体系架构参考模型和层次结构，介绍了工业互联网涉及的关键技术，讨论了工业互联网发展面临的巨大挑战和对策。报告期间，王兴伟教授从生活出发，语言生动，想法创新，深刻描述了工业互联网的蓝图。最后，他希望会有更多的科研工作者对工业互联网能够进行深入研究，帮助国家工业化道路少走一些弯路，越走越好。
+                            </p>
+                            <span class="mni-time">2016/11/28</span>
+                        </div>
+                    </div>
+                    <div class="mb-news-item2 mb_i">
+                        <a href="#" class="mni-pic"><img src="img/news/3.jpg" /></a>
+                        <div class="mni-cont">
+                            <a href="#" class="mni-title">
+                                计算机与信息工程学院举办“独E无二” 迎新晚会
+                            </a>
+                            <p class="mni-summary">
+                                    11月4日晚，计算机与信息工程学院 “独E无二”迎新晚会于学校剧院拉开帷幕，此次晚会由信息学院学生会承办。信息学院院长琚春华、副院长傅培华、党委副书记许金根、2016级新生班主任、杭州音聚有限公司CEO校友陆振哲以及各系室老师和兄弟学院代表，与2016级本科生和研究生齐聚一堂，共同观看迎新晚会。小帽子乐队的两首开场歌曲激情飞扬，瞬间引爆全场，顺利拉开了晚会的帷幕。之后，琚春华院长代表学院向信息学院2016级新生致以衷心的祝贺和诚挚的欢迎，还演唱了精心准备的歌曲《驿动的心》，歌里的那份真诚和情感随着音乐向全场观众娓娓道来，感动了现场所有学生。
+                            </p>
+                            <span class="mni-time">2016/11/10</span>
+                        </div>
+                    </div>
+                    <div class="mb-news-item2 mb_i">
+                        <a href="#" class="mni-pic"><img src="img/news/4.jpg" /></a>
+                        <div class="mni-cont">
+                            <a href="#" class="mni-title">
+                                第七届群智能系统国际研讨会暨第五届移动及无线计算国际研讨会在浙江工商大学圆满落幕
+                            </a>
+                            <p class="mni-summary">
+                                    10月28日-30日，由我校计算机与信息工程学院承办的2016年第七届群智能系统国际研讨会（International Workshop on Swarm Intelligent Systems, IWSIS 2016）暨第五届移动及无线计算国际研讨会（International Workshop on Mobile and Wireless Computing, IWMWC 2016）在我校隆重召开。来自全国各地的60余位专家、学者参加了此次会议。本次会议邀请了包括上海交通大学曹健、华中师范大学李延晖、浙江工业大学周根贵等多位全国知名教授作主题报告。除大会报告外，会议还分小组进行了学术交流。
+                            </p>
+                            <span class="mni-time">2016/11/02</span>
+                        </div>
+                    </div>
+                    <div class="mb-news-item2 mb_i">
+                        <a href="#" class="mni-pic"><img src="img/news/5.jpg" /></a>
+                        <div class="mni-cont">
+                            <a href="#" class="mni-title">
+                                赵沁平院士做客我校“百家百科”学者论坛
+                            </a>
+                            <p class="mni-summary">
+                                     9月24日下午， 中国工程院院士、北京航空航天大学教授、第十一届全国政协委员、中国科协副主席、现任浙江工商大学信息学院名誉院长赵沁平院士做客我校“百家百科讲坛•学者论坛”，在图书馆一楼报告厅为我校200余名师生作了题为“虚拟现实+”的学术报告。赵院士通过三个视频——“虚拟现实+”在生活上、军事上、医疗上的应用让学生们直观了解该项技术，并提出了虚拟现实系统具有的Immersion、Interaction、Imagination三种特性。在赵院士看来，提到“虚拟现实+”，大家的印象还仅仅停留在娱乐方面，其实不然，与“互联网+”一样，虚拟现实技术也是各行业都可以采用并助力自身发展的一项重要技术，尤其在军事、医学、装备制造、智慧城市等诸多领域，虚拟现实技术都大有用武之地。如：现今大部分军事活动——阅兵、军事演习，都是通过虚拟现实技术仿真现实环境实现的。在抗战胜利70周年阅兵仪式上，北京电视台采用了虚拟演播室技术实时直播。随着主持人的解说，虚拟武器装备会实时出现在他身边，生动形象的展示了我军装备威武雄壮，一改往日干巴巴的文字、图片描述，其体验效果可谓是直接上升了一个档次。这是赵院士所在虚
+                            </p>
+                            <span class="mni-time">2016/09/27</span>
+                        </div>
+                    </div>
+                    <div class="mb-news-item2 mb_i">
+                        <a href="#" class="mni-pic"><img src="img/news/6.jpg" /></a>
+                        <div class="mni-cont">
+                            <a href="#" class="mni-title">
+                                我校学生在2016年第七届中国大学生服务外包创新创业大赛中喜获佳绩
+                            </a>
+                            <p class="mni-summary">
+                                    2016年9月23日，第七届中国大学生服务外包创新创业大赛决赛在无锡江南大学落下帷幕。经过近七个月的激烈角逐，我校计算机与信息工程学院参赛的三支队伍，乾隆队（指导老师：谢波、潘云；参赛学生：唐敏意、黄凯航、唐峰、张虎涛、席晶）、Tiimu团队（指导老师：谢波、王家乐；参赛学生：郑晓玲、陆伊婷、刘阳、李敏、代思宇）和铁蛋火车侠团队（指导老师：谢波、张华；参赛学生：周嵩、颜佳钦、徐博大、俞炜怡、沈佳俊）在企业命题A类组表现突出，均获得全国二等奖，这是我校在大学生服务外包创新创业大赛中取得历史最好成绩。其中，乾隆队所开发的项目（项目名称：万才信息中国服务外包人才网络平台移动版）在发包型赛题项目验收中，被万才信息技术无锡有限公司采纳，成功中标。
+                            </p>
+                            <span class="mni-time">2016/09/26</span>
+                        </div>
+                    </div>
+                    <div class="mb-news-item2 mb_i">
+                        <a href="#" class="mni-pic"><img src="img/news/7.jpg" /></a>
+                        <div class="mni-cont">
+                            <a href="#" class="mni-title">
+                                学生处处长金锦华一行走访慰问信息学院2016级残疾新生
+                            </a>
+                            <p class="mni-summary">
+                                    2016年8月3日上午，学生处处长金锦华、信息学院分党委副书记许金根专程前往萧山，走访慰问了我校2016级残疾新生童卓玥，送去了来自学校的第一份温暖。童卓玥小时候因高烧导致二级肢体残疾，左腿僵硬，肌肉萎缩。父亲常年在外打工，母亲在当地打工。但是，童卓玥不畏病痛的折磨，寒窗苦读，在今年的高招中，以优异的成绩被我校计算机与信息工程学院录取。在得知童卓玥的情况后，金锦华处长立即通知信息学院领导，组织前往萧山探望童卓玥。
+                            </p>
+                            <span class="mni-time">2016/08/08</span>
+                        </div>
+                    </div>
+                    <div class="mb-news-item2 mb_i">
+                        <a href="#" class="mni-pic"><img src="img/news/8.jpg" /></a>
+                        <div class="mni-cont">
+                            <a href="#" class="mni-title">
+                                清华大学留学生的移动课堂杭州行
+                            </a>
+                            <p class="mni-summary">
+                                    2016年6月23日上午，清华大学老师以及留学生一行9人到访信息学院，展开为期两天的交流学习。上午在学院会议室举行了简短的欢迎仪式，信息学院副院长傅培华教授、物流系主任伍蓓教授、副主任彭扬以及左超老师出席了欢迎仪式。仪式过后，清华留学生们先行来到杭州空港跨境电商园。他们参观了产业园跨境电商的自营仓和公共仓，留学生们就仓储、打包、配送等环节提出了疑问，与工作人员进行深入地交流，更好地了解中国跨境电商产业。
+                            </p>
+                            <span class="mni-time">2016/06/27</span>
+                        </div>
+                    </div>
+                    <div class="mb-news-item2 mb_i">
+                        <a href="#" class="mni-pic"><img src="img/news/9.jpg" /></a>
+                        <div class="mni-cont">
+                            <a href="#" class="mni-title">
+                                浙江工商大学“如歌岁月，似水年华”毕业晚会圆满落幕
+                            </a>
+                            <p class="mni-summary">
+                                    5月27日晚，浙江工商大学信息学院第五届“如歌岁月，似水年华”毕业晚会在江韵阁隆重举行。此次晚会由信息学院分团委学生会主办，信息学院分党委书记王勋、副书记许金根、国家杰青华璟、院办主任汤颖、教务办主任王敏、学办主任李琼、计科系主任王慧燕、安全系主任邵俊、物流系副主任彭扬以及各系室老师、辅导员等出席了晚会。信息学院的Lighting舞队带来的开场舞《LUV》瞬间点燃了全场，毕业生夏超峰献唱《我的舞台》，展现了毕业生充满自信的面貌。而由夏超峰和李琼老师合唱的《私奔到月球》让大家感受到了浓浓的师生情谊。16届毕业班辅导员和他们的班长带来的走秀将整场晚会推向了高潮。
+                            </p>
+                            <span class="mni-time">2016/06/07</span>
+                        </div>
+                    </div>
+                    <div class="mb-news-item2 mb_i">
+                        <a href="#" class="mni-pic"><img src="img/news/10.jpg" /></a>
+                        <div class="mni-cont">
+                            <a href="#" class="mni-title">
+                                我校学子在“万朋杯”第五届浙江省大学生服务外包创新应用大赛中获奖
+                            </a>
+                            <p class="mni-summary">
+                                    2016年6月4日，第五届浙江省大学生服务外包创新应用大赛决赛在湖州师范学院拉下帷幕。本次大赛由浙江省教育厅、浙江省商务厅、湖州市人民政府主办，共有来着省内高校的89件有效作品进入了决赛。自校赛启动，共有12支队伍参加报名，最终推选出6支队伍参加省赛。由校实践示范基地——软件外包创新实践基地的2支队伍顺利晋级决赛现场，陈鹏TIIMU团队负责的《基于HTML5的高效在线客服系统》和陆阳VRTBT团队负责的《图像素材标记与管理系统》分获二等奖和三等奖。
+                            </p>
+                            <span class="mni-time">2016/06/06</span>
+                        </div>
+                    </div>
+                    <!-- end -->
+                    <div class="btn-more"><a href="#">MORE >></a></div>
+                    
+                </div>
+            </div>
+
+            <div class="mc">
+                <div class="mc-box">
+                    <h5><img src="img/t2.png" /></h5>
+                    <div class="mc-news">
+                        <div class="mc-news-item">
+                            <a href="#" class="mc-title">浙江省电子商务与物流信息技术研究重点实验室开放课题申报通知
+                            </a>
+                            <span class="mc-time">2016/06/17</span>
+                        </div>
+                        <div class="mc-news-item">
+                            <a href="#" class="mc-title">2016-2017-1学期期末课程设计安排通知
+                            </a>
+                            <span class="mc-time">2016/12/12</span>
+                        </div>
+                        <div class="mc-news-item">
+                            <a href="#" class="mc-title">关于启动2017年校级创新创业训练项目申报工作的通知
+                            </a>
+                            <span class="mc-time">2016/12/09</span>
+                        </div>
+                        <div class="mc-news-item">
+                            <a href="#" class="mc-title">
+                            11月30日实务精英讲座通知
+                            </a>
+                            <span class="mc-time">2016/11/25</span>
+                        </div>
+                        <div class="mc-news-item">
+                            <a href="#" class="mc-title">关于上交浙江工商大学第十三届“希望杯”大学生课外学术科技作品竞赛作品的通知
+                            </a>
+                            <span class="mc-time">2016/11/25</span>
+                        </div>
+                        <div class="mc-news-item">
+                            <a href="#" class="mc-title">
+                            12月2日实务精英进课堂通知
+                            </a>
+                            <span class="mc-time">2016/11/22</span>
+                        </div>
+                        <div class="mc-news-item">
+                            <a href="#" class="mc-title">
+                            11月11日实务精英进课堂通知
+                            </a>
+                            <span class="mc-time">2016/11/10</span>
+                        </div>
+                        <div class="mc-news-item">
+                            <a href="#" class="mc-title">
+                            第10周课程设计通知
+                            </a>
+                            <span class="mc-time">2016/11/07</span>
+                        </div>
+                        <div class="mc-news-item">
+                            <a href="#" class="mc-title">
+                            11月7日实务精英进课堂通知
+                            </a>
+                            <span class="mc-time">2016/11/03</span>
+                        </div>
+                        <div class="mc-news-item">
+                            <a href="#" class="mc-title">
+                            2013级毕业设计选题通知
+                            </a>
+                            <span class="mc-time">2016/10/31</span>
+                        </div>
+                        <div class="mc-news-item">
+                            <a href="#" class="mc-title">
+                            关于举办“互联网大数据采集”培训的通知
+                            </a>
+                            <span class="mc-time">2016/10/21</span>
+                        </div>
+                        <div class="btn-more"><a href="#">MORE >></a></div>
+                    </div>
+                </div>
+
+                <div class="mc-box">
+                    <h5><img src="img/t3.png" /></h5>
+                    <div class="mc-news">
+                        <div class="mc-news-item">
+                            <a href="#" class="mc-title">
+                            [置顶] 欢迎报考浙江工商大学管理工程与电子商务学院（2016年本科招生）
+                            </a>
+                            <span class="mc-time">2016/09/27</span>
+                        </div>
+                        <div class="mc-news-item">
+                            <a href="#" class="mc-title">
+                            浙江工商大学2017年推荐免试硕士研究生体检通知
+                            </a>
+                            <span class="mc-time">2016/09/27</span>
+                        </div>
+                        <div class="mc-news-item">
+                            <a href="#" class="mc-title">万事利集团公司招聘</a>
+                            <span class="mc-time">2016/09/27</span>
+                        </div>
+                        <div class="mc-news-item">
+                            <a href="#" class="mc-title">
+                            2017年计算机与信息工程学院接收推荐免试硕士研究生实施细则
+                            </a>
+                            <span class="mc-time">2016/09/22</span>
+                        </div>
+                        <div class="mc-news-item">
+                            <a href="#" class="mc-title">
+                            浙江工商大学推荐免试硕士研究生系列表格
+                            </a>
+                            <span class="mc-time">2016/09/22</span>
+                        </div>
+                        <div class="mc-news-item">
+                            <a href="#" class="mc-title">2017年全日制硕士研究生复试科目考试大纲</a>
+                            <span class="mc-time">2016/06/24</span>
+                        </div>
+                        <div class="mc-news-item">
+                            <a href="#" class="mc-title">2016年在职工程硕士招生简章</a>
+                            <span class="mc-time">2016/06/24</span>
+                        </div>
+                        <div class="mc-news-item">
+                            <a href="#" class="mc-title">美国六环设计公司中国分公司（筹）</a>
+                            <span class="mc-time">2016/05/30</span>
+                        </div>
+                        <div class="mc-news-item">
+                            <a href="#" class="mc-title">2016浦发银行信用卡中心信息科技类春季校园招聘</a>
+                            <span class="mc-time">2016/04/23</span>
+                        </div>
+                        <div class="mc-news-item">
+                            <a href="#" class="mc-title">“睿琪软件（Glority）2016春季校园招聘”专场宣讲会</a>
+                            <span class="mc-time">2016/04/02</span>
+                        </div>
+                        <div class="mc-news-item">
+                            <a href="#" class="mc-title">2016年计算机与信息工程学院硕士研究生复试通知</a>
+                            <span class="mc-time">2016/03/17</span>
+                        </div>
+                        <div class="btn-more"><a href="#">MORE >></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="f-list ct clearfix">
+                <div class="f-l-1"><img src="img/icons/f_logo.png" /></div>
+                <div class="f-l-2">
+                    <a href="#">院情总览</a>
+                    <a href="#">教育教学</a>
+                    <a href="#">合作交流</a>
+                    <a href="#">科学研究</a>
+                    <a href="#">招生就业</a>
+                    <a href="#">校园生活</a>
+                    <a href="#">师资队伍</a>
+                    <a href="#">特色项目</a>
+                    <a href="#">招生咨询</a>
+                </div>
+                <div class="f-l-3">
+                    <a><img src="img/icons/wb.png" /><br/><span>官方微博</span></a>
+                    <a><img src="img/icons/wx.png" /><br/><span>官方微信</span></a>
+                    <a><img src="img/icons/fix.png" /><br/><span>网站维护</span></a>
+                </div>
+                <div class="f-l-4">
+                    <p>地址：浙江省杭州市下沙高教园区学正街18号</p>
+                    <p>电话：(86)0571-28008316</p>
+                    <p>邮箱：ty@zjgsu.edu.cn</p>
+                </div>
+            </div>
+            <div class="f-banner">
+                <span>Copyright @ 1997-2005 浙江工商大学 <img src="img/icons/c.png"/> 浙公网安备 33011802000512号</span>
+            </div>
+        </div>
+        <!-- footer end -->
     </div>
 
-    <div class="header-t-right">
-        <ul class="header-menu">
-            <li class="first nav_item">
-                <a class="nav_title">首页</a>
-            </li>
-            <li class="nav_item">
-                <a class="nav_title">学院概况</a>
-                <ul class="header-menu-item">
-                    <li><a href="#">学院简介</a></li>
-                    <li><a href="#">机构总览</a></li>
-                    <li><a href="#">现任领导</a></li>
-                    <li><a href="#">历史沿革</a></li>
-                </ul>
-            </li><!--学院概况：学院简介，机构总览，现任领导，历史沿革-->
-            <li class="nav_item">
-                <a class="nav_title">人才培养</a>
-                <ul class="header-menu-item">
-                    <li><a href="#">师资队伍</a></li>
-                    <li><a href="#">本科生教学</a></li>
-                    <li><a href="#">研究生教学</a></li>
-                    <li><a href="#">留学生教学</a></li>
-                    <li><a href="#">学科建设</a></li>
-                </ul>
-            </li><!--人才培养：师资队伍，本科生教学，研究生教学，留学生教学，学科建设-->
-            <li class="nav_item">
-                <a class="nav_title">科研学术</a>
-                <ul class="header-menu-item">
-                    <li><a href="#">科研概况</a></li>
-                    <li><a href="#">科研项目</a></li>
-                    <li><a href="#">平台建设</a></li>
-                </ul>
-            </li><!--科研学术：科研概况，科研项目，平台建设-->
-            <li class="nav_item">
-                <a class="nav_title">招生就业</a>
-                <ul class="header-menu-item">
-                    <li><a href="#">本科生招生</a></li>
-                    <li><a href="#">研究生招生</a></li>
-                    <li><a href="#">留学生招生</a></li>
-                    <li><a href="#">就业信息</a></li>
-                </ul>
-            </li><!--招生就业：本科生招生，研究生招生，留学生招生，就业信息-->
-            <li class="nav_item">
-                <a class="nav_title">对外交流</a>
-                <ul class="header-menu-item">
-                    <li><a href="#">合作交流</a></li>
-                    <li><a href="#">国际合作项目</a></li>
-                </ul>
-            </li><!--对外交流：合作交流，国际合作项目-->
-        </ul>
-    </div>
-</div>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        (function(){
+            //DOM
+            var DOM = {
+                mbiFir: $('.mb_i').eq(0),
+                mbi: $('.mb_i'),
+                firnav: $('.nav_item')
+            }
 
-<div id="boxID"><!--焦点图盒子-->
-    <!--<div class="loading"><img src="img/loading.gif" alt="请稍候..." /></div>&lt;!&ndash;载入画面(可删除)&ndash;&gt;-->
-    <div class="pic"><!--内容列表(li数目可随意增减)-->
-        <ul>
-            <li><a href="#"><img src="image/psb11.jpg"/></a></li>
-            <li><a href="#"><img src="image/psb22.jpg"/></a></li>
-            <li><a href="#"><img src="image/psb33.jpg"/></a></li>
-        </ul>
-    </div>
-</div>
+            function main() {
+                handleEvent();
+            }
 
-<script src="js/jquery.min.js"></script>
-<script>
-    var DOM = {
-        firnav: $('.nav_item')
-    }
-    DOM.firnav.eq(0).find('.nav_title').css({
-        'border-bottom':'3px solid #adadad',
-        'padding-bottom': '3px'
-    });
-    DOM.firnav.mouseover(function(){
-        $(this).find('.header-menu-item').show();
-        $(this).find('.nav_title').css({
-            'border-bottom':'3px solid #adadad',
-            'padding-bottom': '3px'
-        });
-        $(this).siblings('.nav_item').find('.nav_title').css({'border-bottom':'none'});
-        $(this).siblings('.nav_item').find('.header-menu-item').hide();
-    });
+            function handleEvent() {
+                DOM.mbi.mouseover(function() {
+                    $(this).siblings('.mb_i').removeClass('mb-news-item').addClass('mb-news-item2');
+                    $(this).removeClass('mb-news-item2').addClass('mb-news-item');
+                });
+
+                DOM.mbi.mouseleave(function() {
+                    DOM.mbiFir.siblings('.mb_i').removeClass('mb-news-item').addClass('mb-news-item2');
+                    DOM.mbiFir.removeClass('mb-news-item2').addClass('mb-news-item');
+                });
+
+                DOM.firnav.eq(0).find('.nav_title').css({
+                    'border-bottom':'3px solid #adadad',
+                    'padding-bottom': '3px'
+                });
+                DOM.firnav.mouseover(function(){
+                    $(this).find('.header-menu-item').show();
+                    $(this).find('.nav_title').css({
+                        'border-bottom':'3px solid #adadad',
+                        'padding-bottom': '3px'
+                    });
+                    $(this).siblings('.nav_item').find('.nav_title').css({'border-bottom':'none'});
+                    $(this).siblings('.nav_item').find('.header-menu-item').hide();
+                });
+            }
+
+            main();
+        })();
+
+    
 </script>
 </body>
 </html>
