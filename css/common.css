@@ -10,7 +10,6 @@ a{
 }
 /* common */
 .header{
-    width:990px;
     height:54px;
     margin:0px auto;
 }
@@ -21,11 +20,10 @@ a{
     height:54px;
 }
 .logo{
-    border-left:10px solid #f6931c;
     margin-top:10px;
 }
 .logo img{
-    height:47px;
+    height:60px;
 }
 /* logo区结束 */
 
@@ -33,6 +31,7 @@ a{
 .header-t-right{
     display:inline-block;
     float:right;
+    margin-top: 8px;
 }
 .header-menu{
     clear:both;
@@ -77,10 +76,10 @@ a{
 /* 标题区header-menu结束 */
 
 #boxID{
-    width:990px;
     height:400px;
     margin:20px auto 0;
 }
+
 
 
 
