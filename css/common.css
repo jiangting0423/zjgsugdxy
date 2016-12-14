@@ -1,0 +1,86 @@
+/* reset */
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+*{
+    font-family: 微软雅黑;
+}
+/* common */
+.header{
+    width:990px;
+    height:54px;
+    margin:0px auto;
+}
+
+/* logo区开始 */
+.header-t-left{
+    display:inline-block;
+    height:54px;
+}
+.logo{
+    border-left:10px solid #f6931c;
+    margin-top:10px;
+}
+.logo img{
+    height:47px;
+}
+/* logo区结束 */
+
+/* 标题区header-menu开始 */
+.header-t-right{
+    display:inline-block;
+    float:right;
+}
+.header-menu{
+    clear:both;
+    display: inline-block;
+    height:22px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    border-bottom: 1px solid #adadad;
+    cursor: pointer;
+    font-size: 16px;
+    color:#595959;
+    position:relative;
+}
+.header-menu .first{
+    padding-left:0px;
+}
+.header-menu>li{
+    float:left;
+    padding-left:20px;
+}
+
+/*.header-menu>li>a:hover+.header-menu-item{*/
+     /*display: block;*/
+ /*}*/
+.header-menu-item{
+    display: none;
+    position:absolute;
+    left:-40px;
+    top:30px;
+}
+.header-menu-item li{
+    float:left;
+    margin-right:15px;
+    font-size: 14px;
+}
+.header-menu-item a:link,.header-menu-item a:visited{
+    color:#f6931c;
+}
+.header-menu-item a:hover,.header-menu-item a:active{
+    color:#d65906;
+}
+/* 标题区header-menu结束 */
+
+#boxID{
+    width:990px;
+    height:400px;
+    margin:20px auto 0;
+}
+
+
+

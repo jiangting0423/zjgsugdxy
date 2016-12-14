@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浙江工商大学管理工程与电子商务学院</title>
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/myfocus-2.0.1.min.js"></script><!--引入myFocus库-->
+    <script type="text/javascript" src="js/mf-pattern/mF_rapoo.js"></script><!--引入风格js文件-->
+    <link href="js/mf-pattern/mF_rapoo.css" type="text/css" /><!--引入风格css文件-->
+    <script type="text/javascript">
+        myFocus.set({id:'boxID'});
+    </script>
+
+</head>
+<body>
+<div class="header">
+    <div class="header-t-left">
+        <div class="logo">
+            <img src="image/Logo.png">
+        </div>
+    </div>
+
+    <div class="header-t-right">
+        <ul class="header-menu">
+            <li class="first nav_item">
+                <a class="nav_title">首页</a>
+            </li>
+            <li class="nav_item">
+                <a class="nav_title">学院概况</a>
+                <ul class="header-menu-item">
+                    <li><a href="#">学院简介</a></li>
+                    <li><a href="#">机构总览</a></li>
+                    <li><a href="#">现任领导</a></li>
+                    <li><a href="#">历史沿革</a></li>
+                </ul>
+            </li><!--学院概况：学院简介，机构总览，现任领导，历史沿革-->
+            <li class="nav_item">
+                <a class="nav_title">人才培养</a>
+                <ul class="header-menu-item">
+                    <li><a href="#">师资队伍</a></li>
+                    <li><a href="#">本科生教学</a></li>
+                    <li><a href="#">研究生教学</a></li>
+                    <li><a href="#">留学生教学</a></li>
+                    <li><a href="#">学科建设</a></li>
+                </ul>
+            </li><!--人才培养：师资队伍，本科生教学，研究生教学，留学生教学，学科建设-->
+            <li class="nav_item">
+                <a class="nav_title">科研学术</a>
+                <ul class="header-menu-item">
+                    <li><a href="#">科研概况</a></li>
+                    <li><a href="#">科研项目</a></li>
+                    <li><a href="#">平台建设</a></li>
+                </ul>
+            </li><!--科研学术：科研概况，科研项目，平台建设-->
+            <li class="nav_item">
+                <a class="nav_title">招生就业</a>
+                <ul class="header-menu-item">
+                    <li><a href="#">本科生招生</a></li>
+                    <li><a href="#">研究生招生</a></li>
+                    <li><a href="#">留学生招生</a></li>
+                    <li><a href="#">就业信息</a></li>
+                </ul>
+            </li><!--招生就业：本科生招生，研究生招生，留学生招生，就业信息-->
+            <li class="nav_item">
+                <a class="nav_title">对外交流</a>
+                <ul class="header-menu-item">
+                    <li><a href="#">合作交流</a></li>
+                    <li><a href="#">国际合作项目</a></li>
+                </ul>
+            </li><!--对外交流：合作交流，国际合作项目-->
+        </ul>
+    </div>
+</div>
+
+<div id="boxID"><!--焦点图盒子-->
+    <!--<div class="loading"><img src="img/loading.gif" alt="请稍候..." /></div>&lt;!&ndash;载入画面(可删除)&ndash;&gt;-->
+    <div class="pic"><!--内容列表(li数目可随意增减)-->
+        <ul>
+            <li><a href="#"><img src="image/psb11.jpg"/></a></li>
+            <li><a href="#"><img src="image/psb22.jpg"/></a></li>
+            <li><a href="#"><img src="image/psb33.jpg"/></a></li>
+        </ul>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script>
+    var DOM = {
+        firnav: $('.nav_item')
+    }
+    DOM.firnav.eq(0).find('.nav_title').css({
+        'border-bottom':'3px solid #adadad',
+        'padding-bottom': '3px'
+    });
+    DOM.firnav.mouseover(function(){
+        $(this).find('.header-menu-item').show();
+        $(this).find('.nav_title').css({
+            'border-bottom':'3px solid #adadad',
+            'padding-bottom': '3px'
+        });
+        $(this).siblings('.nav_item').find('.nav_title').css({'border-bottom':'none'});
+        $(this).siblings('.nav_item').find('.header-menu-item').hide();
+    });
+</script>
+</body>
+</html>
